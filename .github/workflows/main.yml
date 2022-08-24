@@ -1,4 +1,4 @@
-name: TERRAFORM
+name: CI
 
 on:
   push:
