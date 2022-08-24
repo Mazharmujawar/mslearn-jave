@@ -16,10 +16,10 @@ jobs:
     runs-on: ubuntu-latest
 
     env:
-      ARM_CLIENT_ID: ${{ secrets."ea1c6147-28bc-4e0f-a705-d85e163ecde6" }}
-      ARM_CLIENT_SECRET: ${{secrets."H7F8Q~zP9rWsudfHFY_lXzWYIbruFooSEa4FcbMA"}}
-      ARM_SUBSCRIPTION_ID: ${{ secrets."3bdcbea5-3621-4761-b33d-2bd0c726a06b"}}
-      ARM_TENANT_ID: ${{ secrets."cf487387-ff9b-490f-95b5-8e731f147e27"}}
+      ARM_CLIENT_ID: ${{ secrets.AZURE_CLIENT_ID }}
+      ARM_CLIENT_SECRET: ${{secrets.AZURE_CLIENT_SECRET}}
+      ARM_SUBSCRIPTION_ID: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
+      ARM_TENANT_ID: ${{ secrets.AZURE_TENANT_ID }}
 
     defaults:
       run:
