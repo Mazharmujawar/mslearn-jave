@@ -1,5 +1,8 @@
 name: TERRAFORM
+env:
+    provider: azurerm
 
+ 
 on:
   push:
     branches: [ main ]
@@ -14,6 +17,7 @@ on:
 jobs:
   terraform:
     runs-on: ubuntu-latest
+      
 
     env:
       ARM_CLIENT_ID: ${{ secrets.AZURE_CLIENT_ID }}
